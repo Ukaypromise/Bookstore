@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import '../Styles/Categories.css';
 
-const Categories = () => {
-  return (
-    <div>Categories</div>
-  )
-}
+const Categories = () => (
+  <section className="categories-container">
+    <span>404</span>
+    <h1>Not Available Yet!!!</h1>
+  </section>
+);
 
-export default Categories
+export default Categories;
