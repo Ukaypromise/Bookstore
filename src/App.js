@@ -11,7 +11,7 @@ function App() {
       <NavBar />
       <section className="content">
         <Routes>
-          <Route path="/bookstore" element={<Books />} />
+          <Route path="/" element={<Books />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
