@@ -18,11 +18,11 @@ const Book = (props) => {
             <button type="button" className="btn-outline">
               Comments
             </button>
-            <div className="vertical-divider"></div>
+            <div className="vertical-divider" />
             <button type="button" className="btn-outline">
               Remove
             </button>
-            <div className="vertical-divider"></div>
+            <div className="vertical-divider" />
             <button type="button" className="btn-outline">
               Edit
             </button>
@@ -42,7 +42,7 @@ const Book = (props) => {
               <span className="stat-text">Completed</span>
             </div>
           </div>
-          <div className="progress-divider"></div>
+          <div className="progress-divider" />
           <div className="progress-info">
             <span className="chapter-title">Current chapter</span>
             <span className="chapter-number">Chapter 3</span>

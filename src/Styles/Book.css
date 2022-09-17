@@ -2,7 +2,7 @@
   background-color: #fff;
   border-radius: 4px;
   border: 1px solid #e8e8e8;
-  padding: 2rem rem;
+  padding: 2rem;
 }
 
 .book-container {
@@ -44,6 +44,7 @@
   font-weight: 700;
   color: #121212;
 }
+
 .info h2 {
   margin-top: 0.188rem;
   font-size: 1.375rem;
@@ -55,13 +56,14 @@
   font-weight: 300;
   color: #4386bf;
 }
+
 .btns {
   /* margin-top: 2rem;
   display: flex;
   gap: 1rem; */
   display: flex;
   align-items: center;
-  margin-top: 1.313rem rem;
+  margin-top: 1.313rem;
 }
 
 .btn-outline {
@@ -74,12 +76,14 @@
   align-items: center;
   cursor: pointer;
 }
+
 .vertical-divider {
   width: 0.125rem;
   height: 1.5rem;
   background-color: #e8e8e8;
   margin: 0 1rem;
 }
+
 .stats {
   display: flex;
   gap: 1rem;
@@ -103,13 +107,16 @@
   margin: 0 3.688rem 0 4.938rem;
   background-color: #e8e8e8;
 }
+
 .progress-circle {
   /* position: absolute;
   border-radius: 50%; */
   width: 4.25rem;
   height: 4.25rem;
+
   /* border: 5px solid #307bbe;
   border-left-color: #e8e8e8; */
+
   /* -webkit-transform: rotate(45deg);
   transform: rotate(45deg); */
 }
@@ -142,6 +149,7 @@
   font-size: 1rem;
   letter-spacing: -0.4px;
 }
+
 .update-btn {
   cursor: pointer;
   border: none;
