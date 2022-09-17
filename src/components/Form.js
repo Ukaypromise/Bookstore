@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/Form.css';
 
 const Form = () => (
-  <div className="form-container">
+  <form className="form-container">
     <h1>ADD NEW BOOK</h1>
     <div className="form-inputs">
       <input type="text" placeholder="Book title" />
@@ -13,7 +13,7 @@ const Form = () => (
       </select>
       <button type="button" className="add-btn">ADD BOOK</button>
     </div>
-  </div>
+  </form>
 );
 
 export default Form;

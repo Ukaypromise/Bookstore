@@ -5,19 +5,15 @@
 }
 
 html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+  font-size: 80%;
   scroll-behavior: smooth;
-  font-family: Montserrat, sans-serif;
   height: 100vh;
   width: 100vw;
-  background-color: #f5f6fa;
-}
+ 
+} 
 
-body {
+ body {
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #f5f6fa;
 }

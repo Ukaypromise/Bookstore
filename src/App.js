@@ -8,14 +8,18 @@ import NotFound from './components/NotFound';
 function App() {
   return (
     <Router>
-      <NavBar />
-      <section className="content">
-        <Routes>
-          <Route path="/" exact element={<Books />} />
-          <Route path="/categories" element={<Categories />} />
-          <Route path="/*" element={<NotFound />} />
-        </Routes>
-      </section>
+      <div className="App">
+        <div className="nav">
+          <NavBar />
+        </div>
+        <section className="content">
+          <Routes>
+            <Route path="/" exact element={<Books />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/*" element={<NotFound />} />
+          </Routes>
+        </section>
+      </div>
     </Router>
   );
 }

@@ -1,28 +1,31 @@
 nav {
-  width: 100%;
+  padding: 24px 4%;
   background-color: #fff;
-  padding: 1rem 2rem;
+  border-bottom: 1px solid #e8e8e8;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-bottom: 2px solid #eee;
+  grid-gap: 40px;
+  gap: 40px;
 }
 
 ul {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-grow: 1;
   list-style-type: none;
-  font-weight: bold;
-  gap: 3rem;
+  grid-gap: 40px;
+  gap: 40px;
 }
 
 ul li a {
   text-decoration: none;
-  color: #4d4c4c;
   outline: none;
+  font-weight: bold;
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  color: #121212;
+  letter-spacing: 1.9px;
 }
 
 ul li a:hover {
@@ -59,5 +62,6 @@ nav figure:hover {
 }
 
 .active {
-  color: #000;
+  opacity: 1;
+  color: #121212;
 }
