@@ -24,12 +24,12 @@ const booksReducer = (state = initialState, action) => {
   }
 };
 
-// Action Creator
+// Action Creators
 export const addBook = (
-  title = "Understanding Redux",
-  author = "Promise",
-  category = "Action",
-  id
+  title = 'Understanding Redux',
+  author = 'Promise',
+  category = 'Action',
+  id,
 ) => ({
   type: ADD_BOOK,
   title,
@@ -43,5 +43,4 @@ export const removeBook = (id) => ({
   id,
 });
 
-export { addBook, removeBook };
 export default booksReducer;
