@@ -14,6 +14,12 @@ const initialState = [
     author: 'Stephen Loberg',
     category: 'Comedy',
   },
+  {
+    id: '3',
+    title: 'Content Writing',
+    author: 'GodsFavour',
+    category: 'Art',
+  },
 ];
 
 // Reducer
