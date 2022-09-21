@@ -1,18 +1,18 @@
-const ADD_BOOK = "src/redux/books/ADD_BOOK";
-const REMOVE_BOOK = "src/redux/books/REMOVE_BOOK";
+const ADD_BOOK = 'src/redux/books/ADD_BOOK';
+const REMOVE_BOOK = 'src/redux/books/REMOVE_BOOK';
 
 const initialState = [
   {
-    id: "1",
-    title: "Cellar Door",
-    author: "Isaac Asimov",
-    category: "Fiction",
+    id: '1',
+    title: 'Cellar Door',
+    author: 'Isaac Asimov',
+    category: 'Fiction',
   },
   {
-    id: "2",
-    title: "The Clown",
-    author: "Stephen Loberg",
-    category: "Comedy",
+    id: '2',
+    title: 'The Clown',
+    author: 'Stephen Loberg',
+    category: 'Comedy',
   },
 ];
 
