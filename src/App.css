@@ -5,15 +5,16 @@
 }
 
 .App {
+  margin: auto;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   font-family: "Montserrat", sans-serif;
-  background-color: #f5f6fa;
+  /* background-color: #f5f6fa; */
   padding: 4%;
 }
 
 .nav {
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 .content {
@@ -23,4 +24,5 @@
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
+  min-height: 400px;
 }

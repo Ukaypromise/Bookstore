@@ -25,7 +25,7 @@ const Books = () => {
 
   return (
     <div>
-      <section>
+      <section className="main">
         <section className="book-list">
           {/* <Book
             title="Hunger Games"

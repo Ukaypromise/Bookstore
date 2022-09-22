@@ -58,7 +58,8 @@ const Form = () => {
           <option value="Drama">Drama</option>
           <option value="Comedy">Comedy</option>
           <option value="Action">Action</option>
-          <option value="Romance">Science</option>
+          <option value="Science">Science</option>
+          <option value="Romance">Romance</option>
         </select>
         <button type="button" className="add-btn" onClick={handleAddBook}>
           ADD BOOK
