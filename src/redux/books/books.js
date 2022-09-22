@@ -11,7 +11,7 @@ const booksReducer = (state = initialState, action) => {
       return [...state, action.payload];
 
     case `${REMOVE_BOOK}/fulfilled`:
-      return state.filter((book) => book.id !== action.id);
+      return state.filter((book) => book.id !== action.payload);
 
     case `${LOAD_API_BOOK}/fulfilled`:
       return [...action.payload];

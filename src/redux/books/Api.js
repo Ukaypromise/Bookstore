@@ -1,10 +1,10 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ADD_BOOK, REMOVE_BOOK, LOAD_API_BOOK } from "./books";
+import { ADD_BOOK, REMOVE_BOOK, LOAD_API_BOOK } from './books';
 
 // Url
 const baseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi';
 const uniqueId = 'Y1oEQortidZYO8NpNzqa';
-const url = `${baseUrl}/apps/${uniqueId}/books`;
+const url = `${baseUrl}/apps/${uniqueId}/books/`;
 
 const fetchBooks = createAsyncThunk(LOAD_API_BOOK, async () => {
   const response = await fetch(url);
@@ -15,20 +15,20 @@ const fetchBooks = createAsyncThunk(LOAD_API_BOOK, async () => {
 
 const addNewBook = createAsyncThunk(ADD_BOOK, async (newBook) => {
   await fetch(url, {
-    method: "POST",
+    method: 'POST',
     body: JSON.stringify({
-      item_id: `${newBook.idGenerate}`,
+      item_id: `${newBook.id}`,
       title: `${newBook.title}`,
       author: `${newBook.author}`,
       category: `${newBook.category}`,
     }),
-    headers: { "Content-type": "application/json; charset=UTF-8" },
+    headers: { 'Content-type': 'application/json; charset=UTF-8' },
   });
   return newBook;
 });
 
 const deleteBook = createAsyncThunk(REMOVE_BOOK, async (id) => {
-  await fetch(`${url}${id}`, { method: "DELETE" });
+  await fetch(`${url}${id}`, { method: 'DELETE' });
   return id;
 });
 
