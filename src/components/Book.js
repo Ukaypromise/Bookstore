@@ -3,7 +3,8 @@ import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import '../Styles/Book.css';
 import progress from '../images/progress.png';
-import { removeBook } from '../redux/books/books';
+// import { removeBook } from '../redux/books/books';
+import { deleteBook } from '../redux/books/Api';
 
 const Book = (props) => {
   const {
@@ -27,7 +28,7 @@ const Book = (props) => {
             <button
               type="button"
               className="btn-outline"
-              onClick={() => dispatch(removeBook(id))}
+              onClick={() => dispatch(deleteBook(id))}
             >
               Remove
             </button>
