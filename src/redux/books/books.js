@@ -1,43 +1,20 @@
 const ADD_BOOK = 'src/redux/books/ADD_BOOK';
 const REMOVE_BOOK = 'src/redux/books/REMOVE_BOOK';
+const LOAD_API_BOOK = 'ADD_API_BOOK';
 
-const initialState = [
-  {
-    id: '1',
-    title: 'Cellar Door',
-    author: 'Isaac Asimov',
-    category: 'Fiction',
-  },
-  {
-    id: '2',
-    title: 'The Clown',
-    author: 'Stephen Loberg',
-    category: 'Comedy',
-  },
-  {
-    id: '3',
-    title: 'Content Writing',
-    author: 'GodsFavour',
-    category: 'Art',
-  },
-];
+const initialState = [];
 
 // Reducer
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_BOOK:
-      return [
-        ...state,
-        {
-          title: action.title,
-          author: action.author,
-          category: action.category,
-          id: action.id,
-        },
-      ];
+    case `${ADD_BOOK}/fulfilled`:
+      return [...state, action.payload];
 
-    case REMOVE_BOOK:
+    case `${REMOVE_BOOK}/fulfilled`:
       return state.filter((book) => book.id !== action.id);
+
+    case `${LOAD_API_BOOK}/fulfilled`:
+      return [...action.payload];
 
     default:
       return state;
@@ -58,4 +35,5 @@ export const removeBook = (id) => ({
   id,
 });
 
+export { LOAD_API_BOOK, ADD_BOOK, REMOVE_BOOK };
 export default booksReducer;
