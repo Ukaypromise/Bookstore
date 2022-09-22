@@ -8,7 +8,7 @@ import Form from './Form';
 const Books = () => {
   const books = useSelector((state) => state.books, shallowEqual);
   const dispatch = useDispatch();
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     dispatch(fetchBooks());
   }, []);
