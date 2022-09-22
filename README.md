@@ -35,7 +35,7 @@ To install NPM on your local machine, please visit NPM official website
 Text editor(Vscode, Atom, NotePad++, Sublime)
 
 - Click on the clone button to copy the clone
-- Open Terminal and run git clone <copied address>
+- Open Terminal and run git clone `https://github.com/Ukaypromise/bookstore.git`
 - Clone the repo
 - From you terminal run " code ." to open in your code editor.
 
