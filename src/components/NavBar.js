@@ -8,7 +8,7 @@ const NavBar = () => (
     <ul>
       <li>
         <NavLink className="logo" to="/">
-          Bookstore CMS
+          Ubani Bookstore
         </NavLink>
       </li>
       <li>

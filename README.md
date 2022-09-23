@@ -20,12 +20,8 @@
 
 
 ## Live Demo (Note Available yet)
-![main-photo](https://user-images.githubusercontent.com/85847249/191847920-468a8610-85c2-4af6-b6a1-54303f983897.png)
-![main-2](https://user-images.githubusercontent.com/85847249/191847969-b04ad012-4821-4d37-80af-109ac0ac5eea.png)
-![main-3](https://user-images.githubusercontent.com/85847249/191847992-345bbaee-a634-4399-a376-3c299746bfb5.png)
-![main-4](https://user-images.githubusercontent.com/85847249/191848056-5e3b0476-3914-470f-b01a-a58d2236b423.png)
 
-[Check Me Out!!!]()
+
 
 
 ## Getting Started
@@ -40,7 +36,7 @@ To install NPM on your local machine, please visit NPM official website
 Text editor(Vscode, Atom, NotePad++, Sublime)
 
 - Click on the clone button to copy the clone
-- Open Terminal and run git clone <copied address>
+- Open Terminal and run git clone `https://github.com/Ukaypromise/bookstore.git`
 - Clone the repo
 - From you terminal run " code ." to open in your code editor.
 
